@@ -149,7 +149,30 @@ const EsportWebsite = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-gray-900 to-green-900/20"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-green-500/10"></div>
           
-          <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+          {/* Pençe Arka Planı */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative">
+              {/* Neon Yeşil Çizgi */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-2 h-[500px] bg-gradient-to-b from-transparent via-green-400 to-transparent shadow-2xl shadow-green-400/80 animate-pulse"></div>
+              </div>
+              {/* Pençe Görseli */}
+              <div className="relative z-10 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                <Image 
+                  src="/pençe.png" 
+                  alt="Claw Background" 
+                  width={600}
+                  height={600}
+                  className="object-contain filter drop-shadow-lg"
+                  style={{
+                    filter: 'drop-shadow(0 0 40px rgba(34, 197, 94, 0.9)) drop-shadow(0 0 80px rgba(34, 197, 94, 0.6))'
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="relative z-10 text-center max-w-4xl mx-auto px-4 home-section-overlay">
             <div className="mb-8">
               <div className="w-48 h-48 mx-auto mb-8 shadow-2xl rounded-full overflow-hidden bg-gradient-to-r from-purple-500 to-green-400 p-2">
                 <div className="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
@@ -196,8 +219,31 @@ const EsportWebsite = () => {
         </section>
 
         {/* Players Section */}
-        <section id="players" className="py-20 bg-gray-800/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="players" className="py-20 bg-gray-800/50 relative overflow-hidden">
+          {/* CSGO Arka Planı */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative">
+              {/* Neon Yeşil Çizgi */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-2 h-[500px] bg-gradient-to-b from-transparent via-green-400 to-transparent shadow-2xl shadow-green-400/80 animate-pulse"></div>
+              </div>
+              {/* CSGO Görseli */}
+              <div className="relative z-10 opacity-50 hover:opacity-80 transition-opacity duration-300">
+                <Image 
+                  src="/csgo.png" 
+                  alt="CSGO Background" 
+                  width={900}
+                  height={900}
+                  className="object-contain filter drop-shadow-lg"
+                  style={{
+                    filter: 'drop-shadow(0 0 50px rgba(34, 197, 94, 0.8)) drop-shadow(0 0 100px rgba(34, 197, 94, 0.5))'
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
                 Our Players
@@ -286,8 +332,31 @@ const EsportWebsite = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 bg-gray-800/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="contact" className="py-20 bg-gray-800/50 relative overflow-hidden">
+          {/* Pençe2 Arka Planı */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative">
+              {/* Neon Yeşil Çizgi */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-2 h-[500px] bg-gradient-to-b from-transparent via-green-400 to-transparent shadow-2xl shadow-green-400/80 animate-pulse"></div>
+              </div>
+              {/* Pençe2 Görseli */}
+              <div className="relative z-10 opacity-60 hover:opacity-90 transition-opacity duration-300">
+                <Image 
+                  src="/pençe2.png" 
+                  alt="Claw Background 2" 
+                  width={650}
+                  height={650}
+                  className="object-contain filter drop-shadow-lg"
+                  style={{
+                    filter: 'drop-shadow(0 0 45px rgba(34, 197, 94, 0.8)) drop-shadow(0 0 90px rgba(34, 197, 94, 0.5))'
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">
                 Get In Touch
